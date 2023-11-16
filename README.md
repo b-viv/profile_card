@@ -14,7 +14,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Link](https://www.frontendmentor.io/solutions/profile-card-only-html-and-css-mEERcLJrwu)
 - Live Site URL: [Link](https://b-viv.github.io/profile_card/)
 
 ## My process
