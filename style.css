@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --Dark-cyan: hsl(185, 75%, 39%); 
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%); 
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Dark-cyan);
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+    background-repeat: no-repeat, no-repeat;
+}
+
+.card {
+    text-align: center;
+    margin: 2em;
+}
+
+.top-card {
+    height: 8em;
+    width: 20em;
+    background: no-repeat url(images/bg-pattern-card.svg);
+    background-size: cover;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-img {
+    position: absolute;
+    z-index: 99;
+    transform: translateY(80px);
+}
+
+.profile-img img {
+    width: 100%;
+    border-radius: 50%;
+    border: 5px solid hsl(0, 0%, 100%);
+}
+
+.card .bottom-card {
+    width: 20em;
+    background-color: hsl(0, 0%, 100%);
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 70px 0 30px 0;
+}
+
+.name {
+    font-weight: 700;
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.name span {
+    color: var(--Dark-grayish-blue);
+    font-weight: 400;
+}
+
+.city {
+    font-size: 15px;
+    color: var(--Dark-grayish-blue);
+    margin: 8px 0 20px;
+}
+
+.stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top: 2px solid hsla(0, 0%, 59%, 0.2);
+    padding: 0 30px;
+}
+
+.stat {
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.stats p:first-child {
+    font-weight: 700;
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.stats p:last-child {
+    font-size: 11px;
+    color: var(--Dark-grayish-blue);
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+
+
